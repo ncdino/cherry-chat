@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "cherry-talk"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "cherry-talk-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
